@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(15, 15, 15);
+}
+
+#background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  opacity: 0.08;
+}
+
+#background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+
+.container h1 {
+  width: 80%;
+  margin: 35px auto;
+  line-height: 50px;
+  color: whitesmoke;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 35px;
+}
+
+.container p {
+  margin-top: 35px;
+  color: whitesmoke;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container mark {
+  background-color: orangered;
+  color: whitesmoke;
+}
+
+.container button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+  padding: 15px 50px;
+  background-color: #ff4500;
+  text-decoration: none;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  -webkit-box-shadow: 3px 4px 15px -1px rgba(255, 47, 0, 1);
+  -moz-box-shadow: 3px 4px 15px -1px rgba(255, 47, 0, 1);
+  box-shadow: 3px 4px 15px -1px rgba(255, 47, 0, 1);
+  transition: all 0.3s;
+}
+
+.container button:hover {
+  background-color: rgb(210, 58, 3);
+  transform: translateY(-3px);
+}
+
+.container button > a {
+  font-size: 22px;
+  font-weight: 700;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.vsl {
+  margin: 10px auto;
+  color: whitesmoke;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 415px;
+  background-color: orangered;
+  border-radius: 16px;
+  -webkit-box-shadow: 1px 0px 32px -4px rgba(255, 77, 0, 1);
+  -moz-box-shadow: 1px 0px 32px -4px rgba(255, 77, 0, 1);
+  box-shadow: 1px 0px 32px -4px rgba(255, 77, 0, 1);
+}
+
+.vsl > iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+
+.secao2 {
+  margin: 50px 0;
+  padding: 50px 10px;
+  color: orangered;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  background-color: whitesmoke;
+}
+.secao3 {
+  flex-direction: column;
+  margin: 10px auto;
+  width: 100%;
+}
+
+.secao3 h2 {
+  width: 75%;
+  margin: auto;
+  color: whitesmoke;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 34px;
+  line-height: 50px;
+}
+
+.secao3-info {
+  margin: 30px auto;
+  display: flex; /* Adiciona flexbox para alinhar os elementos lado a lado */
+  justify-content: space-between; /* Distribui o espaço entre as divs */
+  align-items: center; /* Centraliza verticalmente os elementos */
+}
+
+.picture-stock {
+  flex: 1; /* A primeira div ocupa 1 parte do espaço disponível */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto; /* Define a largura automática para ajustar ao conteúdo */
+  height: auto;
+  margin-top: 30px;
+}
+
+.picture-stock img {
+  margin: 0 15px;
+  width: 350px;
+  height: 350px;
+}
+
+.list-benef {
+  flex: 1; /* A segunda div ocupa 1 parte do espaço disponível */
+  color: whitesmoke;
+  font-size: 22px;
+  margin-right: 15px;
+  line-height: 32px;
+}
+
+.secao4 {
+  margin: 50px 0;
+  padding: 20px 10px;
+  color: whitesmoke;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  background-color: orangered;
+}
+
+.secao4-card {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: flex; /* Torna a div um contêiner flexível */
+  align-items: center;
+
+  flex-wrap: wrap; /* Permite que os itens flexíveis quebrem para a próxima linha */
+  justify-content: space-between; /* Distribui o espaço horizontalmente entre as divs internas */
+}
+
+.card-passo {
+  width: calc(25% - 20px); /* Define a largura desejada para cada div interna */
+  height: 300px;
+  border: solid whitesmoke;
+  border-radius: 8px;
+  padding: 5px;
+  margin-bottom: 20px; /* Espaço entre as divs internas */
+  -webkit-box-shadow: 6px 6px 39px -16px rgba(255, 68, 0, 1);
+  -moz-box-shadow: 6px 6px 39px -16px rgba(255, 68, 0, 1);
+  box-shadow: 6px 6px 39px -16px rgba(255, 68, 0, 1);
+}
+.card-passo > span > svg {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  background-color: whitesmoke;
+  padding: 5px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.card-passo h2 {
+  font-size: 18px;
+}
+
+.card-passo > p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.action-cards {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px auto;
+  width: 70%;
+}
+
+.action-cards > p {
+  padding: 0;
+  margin: 10px;
+}
+
+.secao5 {
+  flex-direction: column;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: flex; /* Torna a div um contêiner flexível */
+  align-items: center;
+  flex-wrap: wrap; /* Permite que os itens flexíveis quebrem para a próxima linha */
+  justify-content: space-between; /* Distribui o espaço horizontalmente entre as divs internas */
+}
+
+#linha {
+  margin-top: 30px;
+  width: 100%;
+  border-bottom: 0px solid #ff4500;
+}
+
+.secao5-card {
+  width: 100%;
+  height: auto;
+  margin: 45px auto;
+  display: flex; /* Torna a div um contêiner flexível */
+  align-items: center;
+
+  flex-wrap: wrap; /* Permite que os itens flexíveis quebrem para a próxima linha */
+  justify-content: space-between; /* Distribui o espaço horizontalmente entre as divs internas */
+}
+
+.card-passo5 {
+  width: calc(
+    33.33% - 20px
+  ); /* Define a largura desejada para cada div interna */
+  height: auto;
+  border: solid whitesmoke;
+  border-radius: 8px;
+  padding: 5px;
+  margin-bottom: 20px; /* Espaço entre as divs internas */
+  -webkit-box-shadow: 6px 6px 39px -16px rgba(255, 68, 0, 1);
+  -moz-box-shadow: 6px 6px 39px -16px rgba(255, 68, 0, 1);
+  box-shadow: 6px 6px 39px -16px rgba(255, 68, 0, 1);
+}
+
+.card-passo5 > picture > img {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px auto;
+  background-color: whitesmoke;
+  padding: 2px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card-passo5 > p {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer {
+  margin-top: 20px;
+  padding: 25px;
+  text-align: center;
+  background-color: #ff4500;
+  color: whitesmoke;
+}
+
+.footer a {
+  color: whitesmoke;
+}
